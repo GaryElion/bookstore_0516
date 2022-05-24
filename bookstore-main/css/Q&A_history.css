@@ -1,0 +1,9 @@
+.info-item img{
+    width: 50px;
+    height: 50px;
+}
+.info-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
