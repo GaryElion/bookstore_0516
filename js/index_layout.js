@@ -80,7 +80,22 @@ document.getElementById('reportbtn').addEventListener("click",function(){
 });
 
 /*report_envelope.html */
-
+/*document.getElementById('report_e_btn').addEventListener("click",function(){
+  fetch("report_envelope.html")
+  .then((reponse) => reponse.text())
+  .then((txt) => {
+    const mainblock = document.getElementById("mainblock");
+    mainblock.innerHTML = txt;
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "js/authorication.js";
+    document.body.appendChild(script);
+    document.getElementById("sidebar").classList.toggle("close");
+  })
+  .catch((e) => {
+    console.log(e);
+  });
+});*/
 /*announcement.html*/
 document.getElementById('announcementbtn').addEventListener("click",function(){
   fetch("announcement.html")

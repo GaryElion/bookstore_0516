@@ -129,7 +129,13 @@
     text-indent: 5px;
 
 }
-
+textarea{
+    border: 1px solid #dbdfea;
+    resize: none;
+}
+/* textarea:focus{
+    border: 1px solid rgb(255, 72, 0);
+} */
 .announcement_edit textarea {
     outline-color: rgb(210, 210, 210);
     text-indent: 5px;
