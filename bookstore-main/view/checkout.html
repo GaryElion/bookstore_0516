@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/CSS/checkout.css" rel="stylesheet">
+    <link href="../css/checkout.css" rel="stylesheet">
     <link href="../css/header.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/profile/profile.css">
@@ -16,7 +16,86 @@
 <body>
     <header>
     </header>
-    
+    <div class="main">
+        <div class="main_title">
+            <h1>結帳</h1>
+            <span>
+                <a href="#">首頁 </a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">我的購物車</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">結帳</a>
+            </span>
+        </div>
+        <div class="main_content">
+            <div class="left_content">
+                <div class="info_group">
+                    <h2>聯絡資訊</h2>
+                </div>
+                <div class="info_group">
+                    <label>
+                        <h3>姓名</h3>
+                    </label>
+                    <span><input type="text"></span>
+                </div>
+                <div class="info_group">
+                    <label>
+                        <h3>地址</h3>
+                    </label>
+                    <span><input type="text"></span>
+                </div>
+                <div class="info_group">
+                    <label>
+                        <h3>連絡電話</h3>
+                    </label>
+                    <span><input type="tel"></span>
+                </div>
+                <div class="info_group">
+                    <label>
+                        <h3>電子郵件</h3>
+                    </label>
+                    <span><input type="email"></span>
+                </div>
+            </div>
+            <div class="right_content">
+                <div class="order_info_group">
+                    <h2>訂單</h2>
+                    <ul>
+                        <li class="order_info" id="commodity">
+                            <span>
+                                <img src="../image/book.jpg">
+                                Book 
+                            </span>
+                            <span>$250</span>
+                        </li>
+                        <li class="order_info">
+                            <label>數量</label>
+                            <span>1</span>
+                        </li>
+                        <li class="order_info">
+                            <label>總計</label>
+                            <span>$250</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order_info_group">
+                    <h2>
+                        交易方式
+                    </h2>
+                    <div class="radio_group">
+                        <label class="radio_option"><input type="radio" name="way1"><h3>貨到付款</h3></label>
+                        <label class="radio_option"><input type="radio" name="way2"><h3>店到店</h3></label>
+                        <label class="radio_option"><input type="radio" name="way3"><h3>面交</h3></label>
+                    </div>
+                </div>
+                <form class="order_info_group" action="../view/done.html">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <script src="../js/api/chatroom.js"></script>
